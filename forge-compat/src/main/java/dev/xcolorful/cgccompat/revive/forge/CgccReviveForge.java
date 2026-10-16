@@ -6,6 +6,7 @@ import dev.xcolorful.customgun.core.api.common.McSide;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.loading.FMLLoader;
+import net.minecraftforge.fml.loading.FMLPaths;
 
 @Mod(CgccRevive.MOD_ID)
 public class CgccReviveForge {
@@ -14,7 +15,8 @@ public class CgccReviveForge {
         Dist dist = FMLLoader.getDist();
         McSide mcSide = dist.isClient() ? McSide.CLIENT : McSide.DEDICATED_SERVER;
 
-        CgccRevive.init();
+        CgccRevive.init(mcSide,
+                FMLPaths.GAMEDIR.get(), FMLPaths.CONFIGDIR.get());
 
         if (mcSide == McSide.CLIENT) {
             _CgccReviveForgeClient.init();

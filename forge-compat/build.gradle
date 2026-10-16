@@ -107,6 +107,6 @@ tasks.matching { it.name == 'remapJar' || it.name == 'reobfJar' }.configureEach 
     if (it.hasProperty("archiveClassifier")) {
         it.archiveBaseName.set(mod_id)
         it.archiveVersion.set(mod_version)
-        it.archiveClassifier.set("${forge_id}-${minecraft_version}")
+        it.archiveClassifier.set("${forge_id}-${minecraft_support_version}")
     }
 }

@@ -1,5 +1,6 @@
 package dev.xcolorful.cgccompat.revive.core.mixin.playerrevive;
 
+import dev.xcolorful.cgccompat.revive.core.config.CgccReviveConfig;
 import dev.xcolorful.customgun.core.compat.playerrevive.PlayerReviveCompat;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.player.Player;
@@ -46,18 +47,18 @@ public class PlayerReviveCompatMixin {
 
     @Inject(method = "shouldDisableShoot", at = @At("HEAD"), cancellable = true, remap = false)
     private static void cgcc$shouldDisableShoot(CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(true);
+        cir.setReturnValue(CgccReviveConfig.INSTANCE.disableBleedingShoot);
     }
     @Inject(method = "shouldDisableReload", at = @At("HEAD"), cancellable = true, remap = false)
     private static void cgcc$shouldDisableReload(CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(true);
+        cir.setReturnValue(CgccReviveConfig.INSTANCE.disableBleedingReload);
     }
     @Inject(method = "shouldDisableSwitchFireMode", at = @At("HEAD"), cancellable = true, remap = false)
     private static void cgcc$shouldDisableSwitchFireMode(CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(true);
+        cir.setReturnValue(CgccReviveConfig.INSTANCE.disableBleedingSwitchFireMode);
     }
     @Inject(method = "shouldDisableMelee", at = @At("HEAD"), cancellable = true, remap = false)
     private static void cgcc$shouldDisableMelee(CallbackInfoReturnable<Boolean> cir) {
-        cir.setReturnValue(true);
+        cir.setReturnValue(CgccReviveConfig.INSTANCE.disableBleedingMelee);
     }
 }

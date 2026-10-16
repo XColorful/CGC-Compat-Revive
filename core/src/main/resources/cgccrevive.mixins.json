@@ -4,6 +4,7 @@
   "compatibilityLevel": "JAVA_17",
   "refmap": "cgccreviveclient.refmap.json",
   "mixins": [
+    "playerrevive.PlayerReviveCompatMixin"
   ],
   "injectors": {
     "defaultRequire": 1

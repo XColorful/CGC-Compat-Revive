@@ -13,6 +13,11 @@ credits="${mod_credits}"
 authors="${mod_authors}"
 description='''${mod_description}'''
 
+[[mixins]]
+config="cgccrevive.mixins.json"
+[[mixins]]
+config="cgccreviveclient.mixins.json"
+
 [[dependencies.${mod_id}]]
 modId="${target_modloader}"
 mandatory=true

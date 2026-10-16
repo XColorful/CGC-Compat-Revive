@@ -1,0 +1,11 @@
+{
+  "package": "dev.xcolorful.cgccompat.revive.core.mixin",
+  "minVersion": "0.8",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "cgccreviveclient.refmap.json",
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

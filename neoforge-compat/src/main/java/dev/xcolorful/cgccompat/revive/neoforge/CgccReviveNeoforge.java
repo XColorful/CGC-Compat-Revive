@@ -13,7 +13,7 @@ import net.neoforged.fml.loading.FMLPaths;
 public class CgccReviveNeoforge {
 
     public CgccReviveNeoforge(IEventBus modEventBus) {
-        Dist dist = FMLLoader.getDist();
+        Dist dist = FMLLoader.getCurrent().getDist();
         McSide mcSide = dist.isClient() ? McSide.CLIENT : McSide.DEDICATED_SERVER;
 
         CgccRevive.init(mcSide,

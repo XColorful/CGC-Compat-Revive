@@ -20,6 +20,14 @@
 - PlayerRevive
     - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/playerrevive) | [Modrinth](https://modrinth.com/mod/playerrevive)
 
+### 主要特色
+
+游戏内启用/禁用服务端功能：
+- `/cgccrevive [config] [bool]`
+
+（可选）游戏内启用/禁用客户端功能，不影响服务端是否启用：
+- `/cgccreviveclient [config] [bool]`
+
 ## 许可证
 
 - 代码：[GPL-3.0-only](https://www.gnu.org/licenses/gpl-3.0.txt)
@@ -41,6 +49,14 @@ This mod is a compatibility mod for [Custom Gun Continued](https://github.com/XC
     - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/custom-gun-continued) | [Modrinth](https://modrinth.com/mod/custom-gun-continued) | [Github Releases](https://github.com/XColorful/Custom-Gun-Continued/releases)
 - PlayerRevive
     - [CurseForge](https://www.curseforge.com/minecraft/mc-mods/playerrevive) | [Modrinth](https://modrinth.com/mod/playerrevive)
+
+### Main Features
+
+Enable or disable server-side features in-game:
+- `/cgccrevive [config] [bool]`
+
+(Optional) Enable or disable client-side features in-game, which does not affect server-side settings:
+- `/cgccreviveclient [config] [bool]`
 
 ## License
 

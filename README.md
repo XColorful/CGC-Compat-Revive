@@ -5,7 +5,7 @@
 # 自定义枪械永续兼容：救援
 
 本模组是[自定义枪械永续](https://github.com/XColorful/Custom-Gun-Continued)的兼容模组。
-- 提供 [PlayerRevive](https://github.com/CreativeMD/PlayerRevive) 兼容支持
+- 提供[玩家救援](https://github.com/CreativeMD/PlayerRevive)兼容支持
 
 ---
 
